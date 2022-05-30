@@ -1,0 +1,117 @@
+@charset "utf-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font: 14px "Noto Sans KR", sans-serif;
+  color: #262626;
+  line-height: 1;
+  background: #fff;
+}
+input,
+textarea,
+button {
+  font: 14px "Roboto", sans-serif;
+  color: #787878;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: normal;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+  border: none;
+}
+a {
+  color: #262626;
+  text-decoration: none;
+}
+
+.clear::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.hide {
+  display: block;
+  width: 0;
+  height: 0;
+  font-size: 1px;
+  overflow: hidden;
+}
+.inner {
+  width: 1200px;
+  margin: 0 auto;
+}
+.title {
+  font-size: 30px;
+  font-weight: 500;
+  color: #262626;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.sub_title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #262626;
+}
+
+.btn_top a {
+  display: block;
+  position: fixed;
+  bottom: 200px;
+  left: 50%;
+  transform: translateX(652px);
+  width: 64px;
+  height: 64px;
+  background: #fff url(../images/comon_sub/arrow_top.png) no-repeat 50% 18px;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  font-size: 13px;
+  line-height: 74px;
+  z-index: 100;
+  display: none;
+}
+
+
+.btn_write {
+  border: none;
+  transform: translateX(630px);
+  position: fixed;
+  left: 50%;
+  bottom: 60px;
+  width: 108px;
+  height: 108px;
+  background: #ffaf2f url(../images/comon_sub/icon_pen.png) no-repeat 50% 25px;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 145px;
+  cursor: pointer;
+  display: none;
+}
+
+.btn_write:hover {
+  background: #fff url(../images/comon_sub/icon_pen_ov.png) no-repeat 50% 25px;
+  border: 2px solid #ffaf2f;
+  box-sizing: border-box;
+  color: #ffaf2f;
+}
